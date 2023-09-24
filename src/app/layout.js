@@ -1,8 +1,11 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Wrapper from "@/components/global/Wrapper";
+import Layout from "@/components/global/Layout";
+import { usePathname } from "next/navigation";
+import Navbar from "@/components/global/Navbar";
+import Footer from "@/components/global/Footer";
 
-const inter = Poppins({
+const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -15,10 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Wrapper>
-          {children}
-        </Wrapper>
+      <body className={poppins.className}>
+        <Navbar />
+        <Layout>{children}</Layout>
+        <Footer />
       </body>
     </html>
   );

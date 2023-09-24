@@ -2,9 +2,9 @@ import Link from "next/link";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="relative z-10  w-full py-5 px-8 flex flex-col items-center gap-12">
-      <div className="px-20 py-[2px] rounded-full bg-gradient-to-r from-cyan-800 to-cyan-500"></div>
-      <div className="relative z-10 flex flex-col items-center gap-2">
+    <footer className="relative w-full py-16 px-8 flex flex-col items-center gap-12">
+      <div className="absolute top-0 px-20 py-[2px] rounded-full bg-gradient-to-r from-cyan-800 to-cyan-500"></div>
+      <div className="flex flex-col items-center gap-2">
         <p>Get in touch!</p>
         <div className="flex items-center justify-center gap-2">
           <Link className="hover:text-cyan-600 duration-300 text-3xl" href="">
