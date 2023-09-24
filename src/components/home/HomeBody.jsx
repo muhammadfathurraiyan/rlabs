@@ -10,7 +10,7 @@ const HomeBody = () => {
             visiting.
           </p>
           <Link
-            className="inline-block px-5 py-3 rounded-xl duration-500 bg-gradient-to-r from-orange-800 via-orange-800 to-orange-500 bg-size-200 hover:bg-pos-0 bg-pos-100"
+            className="inline-block px-5 py-3 rounded-xl duration-500 bg-gradient-to-r from-cyan-800 via-cyan-800 to-cyan-500 bg-size-200 hover:bg-pos-0 bg-pos-100"
             href="/labs"
           >
             Get started 🚀
