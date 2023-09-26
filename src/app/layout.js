@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Layout from "@/components/global/Layout";
-import { usePathname } from "next/navigation";
+import Wrapper from "@/components/global/Wrapper";
 import Navbar from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
 
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Navbar />
-        <Layout>{children}</Layout>
+        <Wrapper>{children}</Wrapper>
         <Footer />
       </body>
     </html>

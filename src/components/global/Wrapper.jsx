@@ -1,7 +1,5 @@
 "use client";
 import { AnimatePresence, motion, useIsPresent } from "framer-motion";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { usePathname } from "next/navigation";
 import { useContext, useRef } from "react";
 import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
@@ -40,7 +38,7 @@ function FrozenRouter(props) {
   );
 }
 
-const Layout = ({ children }) => {
+const Wrapper = ({ children }) => {
   const path = usePathname();
   return (
     <AnimatePresence mode="wait">
@@ -57,4 +55,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default Wrapper;
