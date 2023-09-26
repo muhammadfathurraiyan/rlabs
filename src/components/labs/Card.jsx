@@ -5,8 +5,12 @@ const Card = ({ title, desc, stacks }) => {
   return (
     <Link href="">
       <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 200, damping: 8 }}
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1, transition: { delay: 0.8, type: "spring", stiffness: 200, damping: 8 } }}
+        whileHover={{
+          scale: 1.05,
+          transition: { type: "spring", stiffness: 200, damping: 8 },
+        }}
         className="bg-zinc-800 w-72 flex flex-col rounded-2xl"
       >
         <div className="h-[25vh]">
