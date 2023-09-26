@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex items-center px-32 max-sm:px-8">
+    <div className="w-full h-screen max-sm:h-[150vh] flex items-center px-32 max-sm:px-8">
       <ParticlesBackground />
       <div className="relative z-10 w-1/2 max-sm:w-full">
         <Reveal>
-          <h1 className="font-bold text-5xl">Raiyan Labs. 👨‍🚀</h1>
+          <h1 className="font-bold text-5xl py-1">Raiyan Labs. 👨‍🚀</h1>
         </Reveal>
         <Reveal>
           <p className="mb-4 text-xl">
