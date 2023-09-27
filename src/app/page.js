@@ -12,7 +12,7 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <p className="mb-4 text-xl">
-            Welcome to Raiyan Labs aka Rlabs. Rlabs is a collection of my works.
+            Welcome to Raiyan Labs aka RLabs. RLabs is a collection of my works.
             I will upload my project here. Stay tuned for the next update.
             Thanks for visiting.
           </p>
@@ -22,7 +22,7 @@ export default function Home() {
             className="inline-block px-5 py-3 rounded-xl text-xl duration-500 bg-gradient-to-r from-cyan-500 via-cyan-800 to-cyan-500 bg-size-200 hover:bg-pos-0 bg-pos-100"
             href="/labs"
           >
-            Get started 🚀
+            Launch the rocket 🚀
           </Link>
         </Reveal>
       </div>
