@@ -12,9 +12,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <p className="mb-4 text-xl">
-            Welcome to Raiyan Labs aka RLabs. RLabs is a collection of my works.
-            I will upload my project here. Stay tuned for the next update.
-            Thanks for visiting.
+            Welcome to Raiyan Labs aka RLabs. RLabs is a collection of my
+            experiments. I will upload all my experiments here. Stay tuned for the
+            next update. Thank you for visiting.
           </p>
         </Reveal>
         <Reveal>

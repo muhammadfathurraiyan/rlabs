@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Card = ({ title, desc, stacks }) => {
+const Card = ({ title, desc, stacks, href, img }) => {
   return (
-    <Link className="grow w-72" href="">
+    <Link className="grow w-72" href={href}>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition: { delay: 0.8, type: "spring", stiffness: 200, damping: 8 } }}
@@ -11,12 +11,12 @@ const Card = ({ title, desc, stacks }) => {
           scale: 1.05,
           transition: { type: "spring", stiffness: 200, damping: 8 },
         }}
-        className="bg-zinc-800 w-full flex flex-col rounded-2xl"
+        className="bg-zinc-800 border-2 border-zinc-950 w-full flex flex-col rounded-2xl"
       >
         <div className="h-[25vh]">
           <img
             className="object-cover rounded-t-2xl max-h-full min-w-full align-bottom"
-            src="https://picsum.photos/800"
+            src={img}
             alt=""
           />
         </div>

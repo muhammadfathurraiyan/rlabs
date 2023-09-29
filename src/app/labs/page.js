@@ -14,9 +14,9 @@ const Labs = () => {
           <p className="text-xl">My experiments.</p>
         </Reveal>
       </div>
-      <div className="flex flex-wrap gap-6 justify-center items-center">
+      <div className="flex flex-wrap gap-6 justify-center items-start">
         {cardsData.map((card) => (
-          <Card title={card.title} desc={card.desc} stacks={card.stacks} />
+          <Card title={card.title} desc={card.desc} stacks={card.stacks} href={card.href} img={card.img} />
         ))}
       </div>
     </div>
