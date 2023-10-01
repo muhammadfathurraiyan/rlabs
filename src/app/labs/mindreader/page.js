@@ -8,8 +8,17 @@ const MindReader = () => {
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
   const [allItemsDisplayed, setAllItemsDisplayed] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [intervalId, setIntervalId] = useState(null); 
-  const [buttonClicked, setButtonClicked] = useState(false); 
+  const [intervalId, setIntervalId] = useState(null);
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const strings = [
+    "",
+    "Analyzing brainwaves...",
+    "Scanning memories...",
+    "Calculating probabillities...",
+    "Decoding thoughts...",
+    "Done...",
+  ];
 
   const startSlider = () => {
     let nextIndex = currentItemIndex;
@@ -21,7 +30,7 @@ const MindReader = () => {
     const newIntervalId = setInterval(() => {
       nextIndex += 1;
 
-      if (nextIndex >= items.length) {
+      if (nextIndex >= strings.length) {
         setAllItemsDisplayed(true);
         clearInterval(newIntervalId);
       } else {
@@ -33,13 +42,6 @@ const MindReader = () => {
     setIntervalId(newIntervalId);
   };
 
-  useEffect(() => {
-    if (buttonClicked) {
-      startSlider();
-      setButtonClicked(false);
-    }
-  }, [buttonClicked]);
-
   const resetSlider = () => {
     clearInterval(intervalId);
     setProgress(0);
@@ -47,15 +49,6 @@ const MindReader = () => {
     setAllItemsDisplayed(false);
     setButtonClicked(true);
   };
-
-  const items = [
-    "",
-    "Analyzing brainwaves...",
-    "Scanning memories...",
-    "Calculating probabillities...",
-    "Decoding thoughts...",
-    "Done...",
-  ];
 
   const renderContent = () => {
     if (currentItemIndex === 0) {
@@ -90,14 +83,14 @@ const MindReader = () => {
                 src="https://media.tenor.com/bN0hO7r_M40AAAAd/laughing-laughing-hysterically.gif"
               />
               <p className="text-center">
-                and congratulations you've been trolled🤣.
+                and congratulations you've been pranked🤣.
               </p>
             </>
           )}
         </div>
       ) : (
         <div className="flex flex-col items-center gap-1 ">
-          <p>{items[currentItemIndex]}</p>
+          <p>{strings[currentItemIndex]}</p>
           <div className="w-full h-2 bg-white rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-cyan-500 via-cyan-800 to-cyan-500 bg-size-200"
@@ -136,6 +129,13 @@ const MindReader = () => {
       );
     }
   };
+
+  useEffect(() => {
+    if (buttonClicked) {
+      startSlider();
+      setButtonClicked(false);
+    }
+  }, [buttonClicked]);
 
   return (
     <div className="w-full min-h-screen gap-8 flex items-center justify-center px-16 py-8 max-sm:px-8">
