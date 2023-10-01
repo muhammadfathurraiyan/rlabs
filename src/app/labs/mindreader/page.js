@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { LuBrainCircuit } from "react-icons/lu";
-import { FaArrowLeft } from "react-icons/fa";
+import BackButton from "@/components/global/BackButton";
 
 const MindReader = () => {
   const [number, setNumber] = useState(null);
@@ -140,12 +139,7 @@ const MindReader = () => {
 
   return (
     <div className="w-full min-h-screen gap-8 flex items-center justify-center px-16 py-8 max-sm:px-8">
-      <Link
-        className="fixed font-semibold top-0 left-24 max-sm:left-8 flex items-center gap-2 text-lg hover:text-cyan-500 duration-300"
-        href="/labs"
-      >
-        <FaArrowLeft /> Back to the future🚀.
-      </Link>
+      <BackButton />
       <div className="p-8 w-80 bg-zinc-800 flex flex-col items-center rounded-2xl">
         <h1 className="text-3xl font-bold">Mind Reader</h1>
         <LuBrainCircuit

@@ -1,7 +1,7 @@
 const cardsData = [
   {
     title: "Mind Reader. 🤯",
-    desc: "This experiment will tell you the truth that no thoughts is safe. Try it if you cant believe it.",
+    desc: "This experiment will tell you the truth that no mind is safe. Try it if you cant believe it.",
     href: "/labs/mindreader",
     img: "http://localhost:3000/mindreader.png",
     stacks: [

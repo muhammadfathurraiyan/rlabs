@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center h-screen items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1">who are u?🤔 </h1>
+          <h1 className="font-bold text-5xl py-1">who am i?🤔 </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl p-2 text-center">
