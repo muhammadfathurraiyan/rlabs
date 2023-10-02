@@ -10,6 +10,17 @@ const cardsData = [
       { name: "javascript", color: "bg-yellow-500" },
     ],
   },
+  {
+    title: "Speech To Text. 🎙",
+    desc: "Speech To Text is a tool to help you type, this tool is perfect for you who are lazy about typing.",
+    href: "/labs/speechtotext",
+    img: "http://localhost:3000/speechtotext.png",
+    stacks: [
+      { name: "react", color: "bg-blue-500" },
+      { name: "tailwind", color: "bg-gray-900" },
+      { name: "javascript", color: "bg-yellow-500" },
+    ],
+  },
 ];
 
 export default cardsData;
