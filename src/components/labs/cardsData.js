@@ -21,6 +21,17 @@ const cardsData = [
       { name: "javascript", color: "bg-yellow-500" },
     ],
   },
+  {
+    title: "TicTacToe. 🎮",
+    desc: "Play with friends, still beta version. Next update I will create the AI player that always make the best move.",
+    href: "/labs/tictactoe",
+    img: "http://localhost:3000/tictactoe.png",
+    stacks: [
+      { name: "react", color: "bg-blue-500" },
+      { name: "tailwind", color: "bg-gray-900" },
+      { name: "javascript", color: "bg-yellow-500" },
+    ],
+  },
 ];
 
 export default cardsData;

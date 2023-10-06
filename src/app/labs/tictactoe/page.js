@@ -1,4 +1,5 @@
 "use client";
+import BackButton from "@/components/global/BackButton";
 import Board from "@/components/tictactoe/Board";
 import React, { useState } from "react";
 import { FaCog } from "react-icons/fa";
@@ -40,11 +41,12 @@ const TicTacToe = () => {
 
   return (
     <div className="w-full min-h-screen gap-8 flex items-center justify-center px-16 py-8 max-sm:px-8">
+      <BackButton />
       <div className="flex flex-col items-center">
         <div className="w-full bg-zinc-800 rounded-xl p-8">
           <h1 className="text-3xl font-bold text-center">TicTacToe</h1>
           <p className="text-center mb-4">
-            You can choose to play solo or with friend.
+            Drink hot chocolate and play tictactoe.
           </p>
           <div className="flex justify-between gap-8">
             <div>
