@@ -68,14 +68,14 @@ const About = () => {
             </a>
             20 y.o. dude from
             <code className="p-2 bg-zinc-800 rounded-lg">
-              "../../indonesia/aceh"
+            &ldquo;../../indonesia/aceh&ldquo;
             </code>
             soon to be a junior web developer InsyaAllah, i love progamming
             especially web programming😍. i have 2 years experience in web
-            development and unfortunately until right now i'm still unemployed
-            sad😭 but that's the truth. my main dream is 3M *not million, that's
+            development and unfortunately until right now i&apos;m still unemployed
+            sad😭 but that&apos;s the truth. my main dream is 3M *not million, that&apos;s
             a secret, but my other dream is to work in a big tech company like
-            google, meta, netflix, etc. ok that's enough🤚.
+            google, meta, netflix, etc. ok that&apos;s enough🤚.
           </p>
         </Reveal>
       </div>
@@ -87,7 +87,7 @@ const About = () => {
         </Reveal>
         <Reveal>
           <p className="text-xl text-center">
-            what's next? i have no idea what to say hehhehh. thank you for
+            what&apos;s next? i have no idea what to say hehhehh. thank you for
             visiting👍. hit me up if u have any questions i put my social links
             bellow bye👋.
           </p>
