@@ -1,5 +1,5 @@
 "use client";
-import { animate, motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const revealVariants = {

@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
-const Card = ({ title, desc, stacks, href, img }) => {
+const Card = ({ title, desc, stacks, href, img, key }) => {
   return (
-    <Link className="grow w-72" href={href}>
+    <Link key={key} className="grow w-72" href={href}>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition: { delay: 0.8, type: "spring", stiffness: 200, damping: 8 } }}
@@ -14,10 +15,12 @@ const Card = ({ title, desc, stacks, href, img }) => {
         className="bg-zinc-800 border-2 border-zinc-950 w-full flex flex-col rounded-2xl"
       >
         <div className="h-[25vh]">
-          <img
+          <Image
             className="object-cover rounded-t-2xl max-h-full min-w-full align-bottom"
             src={img}
-            alt=""
+            alt="image"
+            width={300}
+            height={300}
           />
         </div>
         <div className="p-4 flex flex-col gap-6">

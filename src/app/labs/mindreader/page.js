@@ -70,12 +70,12 @@ const MindReader = () => {
         <div className="flex flex-col items-center">
           {number === null ? (
             <p className="text-center">
-              I know it's just a trick but please input the number (T_T)
+              I know it&apos;s just a trick but please input the number T_T
             </p>
           ) : (
             <>
               <p className="text-center">
-                You're thinking of the number {number}
+                You&apos;re thinking of the number {number}
               </p>
               <img
                 className="w-1/2"
@@ -83,7 +83,7 @@ const MindReader = () => {
                 src="https://media.tenor.com/bN0hO7r_M40AAAAd/laughing-laughing-hysterically.gif"
               />
               <p className="text-center">
-                and congratulations you've been pranked🤣.
+                and congratulations you&apos;ve been pranked🤣.
               </p>
             </>
           )}
@@ -113,7 +113,7 @@ const MindReader = () => {
         </button>
       ) : (
         <p className="text-red-500 text-center">
-          Can't read your mind, think a number between 0-9 😡.
+          Can&apos;t read your mind, think a number between 0-9 😡.
         </p>
       );
     } else {

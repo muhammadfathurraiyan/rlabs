@@ -1,4 +1,5 @@
 import Reveal from "@/components/global/Reveal";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -9,15 +10,18 @@ const About = () => {
         </Reveal>
         <Reveal>
           <p className="p-2 text-xl text-center">
-            <code className="p-2 bg-zinc-800 rounded-lg">hello_world</code>{" "}
+            <code className="p-2 bg-zinc-800 rounded-lg">hello_world</code>
             welcome to my little laboratory. 👨‍🔬
           </p>
         </Reveal>
         <div className="flex items-end gap-8">
           <h1 className="animate-bounce text-5xl max-sm:hidden">👇</h1>
-          <img
+          <Image
             className="mt-4 w-[400px]"
             src="https://media.tenor.com/cEGeOvkWXiEAAAAd/assalamu-alaikum-ronaldo.gif"
+            alt="image"
+            width={400}
+            height={400}
           />
           <h1 className="animate-bounce text-5xl max-sm:hidden">👇</h1>
         </div>
@@ -34,9 +38,12 @@ const About = () => {
             for the next update🚀.
           </p>
         </Reveal>
-        <img
+        <Image
           className="mt-4 w-[400px]"
           src="https://media.tenor.com/zh58XZRJuzYAAAAd/cat-hacking.gif"
+          alt="image"
+          width={400}
+          height={400}
         />
       </div>
       <div className="flex flex-col justify-center h-screen items-center">
@@ -45,18 +52,18 @@ const About = () => {
         </Reveal>
         <Reveal>
           <p className="text-xl p-2 text-center">
-            i am{" "}
+            i am
             <a
               target="_blank"
               href="https://muhammadfathurraiyan.site/"
               className="font-semibold hover:text-cyan-500 duration-300 cursor-pointer"
             >
               Raiyan
-            </a>{" "}
-            20 y.o. dude from{" "}
+            </a>
+            20 y.o. dude from
             <code className="p-2 bg-zinc-800 rounded-lg">
               "../../indonesia/aceh"
-            </code>{" "}
+            </code>
             soon to be a junior web developer InsyaAllah, i love progamming
             especially web programming😍. i have 2 years experience in web
             development and unfortunately until right now i'm still unemployed
@@ -77,9 +84,12 @@ const About = () => {
             bellow bye👋.
           </p>
         </Reveal>
-        <img
+        <Image
           className="mt-4 w-[400px]"
           src="https://media.tenor.com/9sNYD2orJyMAAAAd/see-you-cat-kiss.gif"
+          alt="image"
+          width={400}
+          height={400}
         />
       </div>
     </div>
