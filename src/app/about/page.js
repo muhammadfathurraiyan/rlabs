@@ -5,26 +5,26 @@ const About = () => {
     <div className="flex flex-col gap-20 px-24 max-sm:px-8 py-8">
       <div className="flex flex-col h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1">assalamualaikum!😁🤙</h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">assalamualaikum!😁🤙</h1>
         </Reveal>
         <Reveal>
-          <p className="p-2 text-xl">
+          <p className="p-2 text-xl text-center">
             <code className="p-2 bg-zinc-800 rounded-lg">hello_world</code>{" "}
-            welcome to my little laboratory👨‍🔬.
+            welcome to my little laboratory. 👨‍🔬
           </p>
         </Reveal>
         <div className="flex items-end gap-8">
-          <h1 className="animate-bounce text-5xl">👇</h1>
+          <h1 className="animate-bounce text-5xl max-sm:hidden">👇</h1>
           <img
             className="mt-4 w-[400px]"
             src="https://media.tenor.com/cEGeOvkWXiEAAAAd/assalamu-alaikum-ronaldo.gif"
           />
-          <h1 className="animate-bounce text-5xl">👇</h1>
+          <h1 className="animate-bounce text-5xl max-sm:hidden">👇</h1>
         </div>
       </div>
       <div className="flex flex-col min-h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1">what is this?🙄</h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">what is this?🙄</h1>
         </Reveal>
         <Reveal>
           <p className="text-xl text-center">
@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center h-screen items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1">who am i?🤔 </h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">who am i?🤔 </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl p-2 text-center">
@@ -68,7 +68,7 @@ const About = () => {
       </div>
       <div className="flex flex-col h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1">uhmmm?🤷‍♂️ </h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">uhmmm?🤷‍♂️ </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl text-center">

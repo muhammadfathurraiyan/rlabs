@@ -36,10 +36,10 @@ const DecisionMaker = () => {
   };
 
   const apiCall = async (data) => {
-    const responese = await axios.post(
+    const response = await axios.post(
       `https://deungo-server.vercel.app/api/${data}`
     );
-    setOutput(responese.data);
+    setOutput(response.data);
   };
 
   const Answer = ({ output }) => {
@@ -95,7 +95,7 @@ const DecisionMaker = () => {
         <p>Confused about making a decision? try this one.</p>
         <div className="w-full flex flex-col items-center mt-4 gap-4">
           <form id="inputform" action="" className="w-full flex flex-col gap-1">
-            <label className="text-sm" htmlFor="mind">
+            <label className="" htmlFor="dec">
               Type eveything and get the answer.
             </label>
             <input
@@ -103,7 +103,7 @@ const DecisionMaker = () => {
               min="0"
               max="9"
               type="text"
-              name="mind"
+              name="dec"
               onChange={handleInput}
               placeholder="am i handsome?"
             />

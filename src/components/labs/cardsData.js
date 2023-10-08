@@ -23,9 +23,20 @@ const cardsData = [
   },
   {
     title: "TicTacToe. 🎮",
-    desc: "Play with friends, still beta version. Next update I will create the AI player that always make the best move.",
+    desc: "Everyone already knows this game, i created this by following the react.dev tutroial.",
     href: "/labs/tictactoe",
     img: "http://localhost:3000/tictactoe.png",
+    stacks: [
+      { name: "react", color: "bg-blue-500" },
+      { name: "tailwind", color: "bg-gray-900" },
+      { name: "javascript", color: "bg-yellow-500" },
+    ],
+  },
+  {
+    title: "Decision Maker. 🤔",
+    desc: "Still confused to make a decision, try Decision Maker it will help you.",
+    href: "/labs/decisionmaker",
+    img: "http://localhost:3000/decisionmaker.png",
     stacks: [
       { name: "react", color: "bg-blue-500" },
       { name: "tailwind", color: "bg-gray-900" },

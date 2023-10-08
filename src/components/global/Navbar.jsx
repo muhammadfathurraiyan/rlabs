@@ -2,14 +2,26 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { ImLab, ImHome3, ImInfo } from "react-icons/im";
 
 const Navbar = () => {
   const path = usePathname();
   const links = [
-    { href: "/", name: "Home" },
-    { href: "/labs", name: "Labs" },
-    { href: "/about", name: "About" },
+    { href: "/", name: "Home", icon: "ImHome3" },
+    { href: "/labs", name: "Labs", icon: "ImLab" },
+    { href: "/about", name: "About", icon: "ImInfo" },
   ];
+
+  const Icon = ({ link }) => {
+    if (link == "ImInfo") {
+      return <ImInfo />;
+    } else if (link == "ImHome3") {
+      return <ImHome3 />;
+    } else {
+      return <ImLab />;
+    }
+  };
+
   return (
     <nav className="relative z-10 flex items-center justify-between py-5 px-24 max-sm:px-8">
       <Link
@@ -18,7 +30,7 @@ const Navbar = () => {
       >
         RLabs.
       </Link>
-      <div className="flex items-center gap-8 max-sm:gap-4">
+      <div className="flex items-center gap-8">
         {links.map((link) => (
           <Link
             key={link.name}
@@ -27,11 +39,14 @@ const Navbar = () => {
             }`}
             href={link.href}
           >
-            {link.name}
+            <div className="max-sm:hidden">{link.name}</div>
+            <div className="sm:hidden text-2xl">
+              <Icon link={link.icon} />
+            </div>
             {path === link.href && (
               <motion.span
                 layoutId="underline"
-                className="absolute left-0 bottom-0 h-0.5 w-full bg-cyan-500 rounded-full"
+                className="max-sm:hidden absolute left-0 bottom-0 h-0.5 w-full bg-cyan-500 rounded-full"
               />
             )}
           </Link>
