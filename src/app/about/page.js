@@ -6,7 +6,9 @@ const About = () => {
     <div className="flex flex-col gap-20 px-24 max-sm:px-8 py-8">
       <div className="flex flex-col h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">assalamualaikum!😁🤙</h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
+            assalamualaikum!😁🤙
+          </h1>
         </Reveal>
         <Reveal>
           <p className="p-2 text-xl text-center">
@@ -28,7 +30,9 @@ const About = () => {
       </div>
       <div className="flex flex-col min-h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">what is this?🙄</h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
+            what is this?🙄
+          </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl text-center">
@@ -48,7 +52,9 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center h-screen items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">who am i?🤔 </h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
+            who am i?🤔&quot; &quot;
+          </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl p-2 text-center">
@@ -75,7 +81,9 @@ const About = () => {
       </div>
       <div className="flex flex-col h-screen justify-center items-center">
         <Reveal>
-          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">uhmmm?🤷‍♂️ </h1>
+          <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
+            uhmmm?🤷‍♂️&quot; &quot;
+          </h1>
         </Reveal>
         <Reveal>
           <p className="text-xl text-center">

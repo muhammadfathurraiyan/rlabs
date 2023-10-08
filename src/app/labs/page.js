@@ -15,8 +15,15 @@ const Labs = () => {
         </Reveal>
       </div>
       <div className="flex flex-wrap gap-6 justify-center items-start">
-        {cardsData.map((card) => (
-          <Card key={card.title} title={card.title} desc={card.desc} stacks={card.stacks} href={card.href} img={card.img} />
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            desc={card.desc}
+            stacks={card.stacks}
+            href={card.href}
+            img={card.img}
+          />
         ))}
       </div>
     </div>

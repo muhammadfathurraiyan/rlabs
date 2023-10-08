@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { LuBrainCircuit } from "react-icons/lu";
 import BackButton from "@/components/global/BackButton";
+import Image from "next/image";
 
 const MindReader = () => {
   const [number, setNumber] = useState(null);
@@ -77,10 +78,13 @@ const MindReader = () => {
               <p className="text-center">
                 You&apos;re thinking of the number {number}
               </p>
-              <img
+              <Image
                 className="w-1/2"
                 loading="lazy"
                 src="https://media.tenor.com/bN0hO7r_M40AAAAd/laughing-laughing-hysterically.gif"
+                alt=""
+                width={400}
+                height={400}
               />
               <p className="text-center">
                 and congratulations you&apos;ve been pranked🤣.
