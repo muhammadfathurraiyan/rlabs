@@ -19,8 +19,8 @@ const Card = ({ title, desc, stacks, href, img, key }) => {
             className="object-cover rounded-t-2xl max-h-full min-w-full align-bottom"
             src={img}
             alt="image"
-            width={300}
-            height={300}
+            width={288}
+            height={1}
           />
         </div>
         <div className="p-4 flex flex-col gap-6">
