@@ -27,8 +27,8 @@ const Card = ({ title, desc, stacks, href, img, key }) => {
           <h2 className="font-semibold text-2xl">{title}</h2>
           <p className="">{desc}</p>
           <div className="flex gap-2 flex-wrap">
-            {stacks.map((stack) => (
-              <p className={`p-1 text-sm rounded-md ${stack.color}`}>
+            {stacks.map((stack, index) => (
+              <p key={index} className={`p-1 text-sm rounded-md ${stack.color}`}>
                 #{stack.name}
               </p>
             ))}
