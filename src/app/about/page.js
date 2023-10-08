@@ -55,7 +55,7 @@ const About = () => {
       <div className="flex flex-col justify-center h-screen items-center">
         <Reveal>
           <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
-            who am i?🤔&quot; &quot;
+            who am i?🤔
           </h1>
         </Reveal>
         <Reveal>
@@ -84,7 +84,7 @@ const About = () => {
       <div className="flex flex-col h-screen justify-center items-center">
         <Reveal>
           <h1 className="font-bold text-5xl py-1 text-center max-sm:text-4xl">
-            uhmmm?🤷‍♂️&quot; &quot;
+            uhmmm?🤷‍♂️
           </h1>
         </Reveal>
         <Reveal>

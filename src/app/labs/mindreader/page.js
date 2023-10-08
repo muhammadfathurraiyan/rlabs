@@ -83,8 +83,8 @@ const MindReader = () => {
                 loading="lazy"
                 src="https://media.tenor.com/bN0hO7r_M40AAAAd/laughing-laughing-hysterically.gif"
                 alt=""
-                width={400}
-                height={400}
+                width={100}
+                height={100}
               />
               <p className="text-center">
                 and congratulations you&apos;ve been pranked🤣.

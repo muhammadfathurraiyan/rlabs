@@ -20,7 +20,8 @@ const Card = ({ title, desc, stacks, href, img, key }) => {
             src={img}
             alt="image"
             width={288}
-            height={1}
+            height={288}
+            loading="lazy"
           />
         </div>
         <div className="p-4 flex flex-col gap-6">

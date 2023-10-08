@@ -16,16 +16,14 @@ const Labs = () => {
       </div>
       <div className="flex flex-wrap gap-6 justify-center items-start">
         {cardsData.map((card, index) => (
-          <div key={index}>
-            <Card
-              key={index}
-              title={card.title}
-              desc={card.desc}
-              stacks={card.stacks}
-              href={card.href}
-              img={card.img}
-            />
-          </div>
+          <Card
+            key={index}
+            title={card.title}
+            desc={card.desc}
+            stacks={card.stacks}
+            href={card.href}
+            img={card.img}
+          />
         ))}
       </div>
     </div>
