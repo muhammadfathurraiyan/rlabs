@@ -24,6 +24,7 @@ const About = () => {
             alt="image"
             width={400}
             height={400}
+            loading="lazy"
           />
           <h1 className="animate-bounce text-5xl max-sm:hidden">👇</h1>
         </div>
@@ -48,6 +49,7 @@ const About = () => {
           alt="image"
           width={400}
           height={400}
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col justify-center h-screen items-center">
@@ -98,6 +100,7 @@ const About = () => {
           alt="image"
           width={400}
           height={400}
+          loading="lazy"
         />
       </div>
     </div>
