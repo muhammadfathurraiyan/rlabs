@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import Wrapper from "@/components/global/Wrapper";
 import Navbar from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
+// import Favicon from "../../public/favicon.ico"
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
