@@ -25,7 +25,7 @@ const Joker = () => {
         <p>Everyone needs some laugh.</p>
         <div className="flex flex-col items-center mt-4 gap-4">
           <div className="w-[500px] h-fit p-2 border-2 border-zinc-950 rounded-lg bg-zinc-900">
-            <p>{jokes.firstLine}</p>
+            <p className="mb-2">{jokes.firstLine}</p>
             <p>{jokes.secondLine}</p>
           </div>
           <button
