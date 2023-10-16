@@ -45,14 +45,14 @@ const cardsData = [
   },
   {
     title: "Joker. 🤡",
-    desc: "Developer needs some fun, try joker and laugh like joker.",
+    desc: "Developer needs some fun, try joker and laugh like joker. ahihih.",
     href: "/labs/joker",
     img: "https://raiyanlabs.vercel.app/joker.png",
     stacks: [
       { name: "nextjs", color: "bg-blue-500" },
       { name: "tailwind", color: "bg-gray-900" },
       { name: "javascript", color: "bg-yellow-500" },
-      { name: "JokeAPI", color: "bg-fuschia-500" },
+      { name: "JokeAPI", color: "bg-fuchsia-800" },
     ],
   },
 ];
