@@ -68,7 +68,6 @@ const SpeechToText = () => {
           <textarea
             id="textArea"
             rows="13"
-
             placeholder="your text will appear here..."
             className="text-zinc-100 w-full p-2 resize-none border-2 border-zinc-950 rounded-lg bg-zinc-900"
             value={text}
