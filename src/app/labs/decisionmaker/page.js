@@ -37,9 +37,23 @@ const DecisionMaker = () => {
 
   const apiCall = async (data) => {
     const response = await axios.post(
-      `https://deungo-server.vercel.app/api/${data}`
+      "https://chatbb.free2gpt.xyz/api/generate",
+      {
+        model: "gpt-3.5-turbo",
+        messages: [
+          {
+            role: "user",
+            content: data,
+          },
+        ],
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
     );
-    setOutput(response.data);
+    setOutput(response.data?.choices[0]?.message?.content);
   };
 
   const Answer = ({ output }) => {
