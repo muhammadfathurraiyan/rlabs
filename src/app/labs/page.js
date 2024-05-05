@@ -17,7 +17,7 @@ const Labs = () => {
       <div className="grid grid-cols-4 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
         {cardsData.map((card, index) => (
           <Card
-            key={index}
+            key={card.title}
             title={card.title}
             desc={card.desc}
             stacks={card.stacks}

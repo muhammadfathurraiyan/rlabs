@@ -29,39 +29,17 @@ const DecisionMaker = () => {
     document.getElementById("inputform").reset();
   };
 
-  const handleClick = async ({ input }) => {
+  const handleClick = async (input) => {
     apiCall(
-      `what is the sentiment of this tweet = "${input}", answer with "Positive" or "Negative" or "Neutral", do not answer anything else.`
+      `what is the sentiment of this decision = "${input}", answer with "Positive" or "Negative" or "Neutral", do not answer anything else.`
     );
   };
 
-  const apiCall = async (data) => {
+  const apiCall = async (input) => {
     const response = await axios.post(
-      "https://chatbb.free2gpt.xyz/api/generate",
-      `{
-        "messages":[{"role":"user","content": ${data}}],
-      }`,
-      {
-        headers: {
-          authority: "chatbb.free2gpt.xyz",
-          accept: "*/*",
-          "accept-language": "en-US,en;q=0.9,id;q=0.8",
-          "content-type": "text/plain;charset=UTF-8",
-          origin: "https://chatbb.free2gpt.xyz",
-          referer: "https://chatbb.free2gpt.xyz/",
-          "sec-ch-ua":
-            '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
-          "sec-ch-ua-mobile": "?0",
-          "sec-ch-ua-platform": '"Windows"',
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-origin",
-          "user-agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-        },
-      }
+      `https://deungo-server.vercel.app/api/${input}`
     );
-    setOutput(response.data?.choices[0]?.message?.content);
+    setOutput(response.data);
   };
 
   const Answer = ({ output }) => {
@@ -134,7 +112,7 @@ const DecisionMaker = () => {
           {!output ? (
             <button
               onClick={() => {
-                handleClick({ input: input });
+                handleClick(input);
               }}
               className="inline-block py-3 px-5 rounded-xl duration-500 bg-gradient-to-r from-cyan-500 via-cyan-800 to-cyan-500 bg-size-200 hover:bg-pos-0 bg-pos-100"
             >
